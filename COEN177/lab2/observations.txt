@@ -1,0 +1,2 @@
+In step 3 when running the program from step 1 without any arguments results in a seg fault
+The difference in the command line argument for the code just results in the program running faster or slower depending on if the number is large or small

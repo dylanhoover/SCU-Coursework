@@ -1,0 +1,8 @@
+When running milk1 the value of the note and milk is set to 0 and then thread B buys the milks which sets the value of the note to 1 and the milk to 0, it then prints out that thread A is buying milk setting the note to 1 and milk to 1 then note to 0 and milk to 1
+Running milk2 the value of the note is set to 0 and milk is 0, which is printed twice and then note is set to 1 but no milk is ever bought
+Milk3 prints the values of the notes, then noteA is set to 1, and then noteB is set to 1 but no milk is ever bought
+Milk4 is the only one that doesn't buy too much milk, the milk is bought by threadA and the notes are reset to 0
+
+The threadsync code builds upon the hellothreads code from the last lab but this time includes semephor locks around critical sections, however these aren't neede because no variables are actually shared
+The program does the same thing as the threadhello otherwise
+

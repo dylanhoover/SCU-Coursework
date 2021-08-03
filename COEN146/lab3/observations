@@ -1,0 +1,34 @@
+Step 1:
+    netstat: Shows what my laptop is currently connected to, for example I have a stackoverflow tab open in chrome and can see that in the output, it also shows which ports are open and whats using them. The usgae of the command is to show network status and protocol statistics
+    ifconfig: Shows my network interfaces and the information relating to them, i.e. my wireless card shows my ip for my local network and other stuff. Command can also config the network interfaces such as turning them on or off.
+    hostname: shows my laptops hostname, shows the name of the device associated with the ip. Can be used to change the hostname aswell
+    ping: sends packets to specified destination
+    traceroute: when run it shows a list of ip addresses the packet sent takes until it reaches the hostname
+    telnet: connects to specified server at specific port, when run I connected to google at port 80
+    host/dig: when given a url gives back the ip address associated with it, dig gives back a lot more information
+    route: when route is executed terminal shows the local routing table
+    arp: shows a table of all the devices that have transfered data to the router
+
+
+Step 2: 
+    first pinged www.amazon.com with 128 bytes of data, there was 0% packet loss, the average RTT was 28.793 seconds. This 0% packet loss and low RTT makes sense because the host is in the US
+    second ping yahoo.co.jp with 64 bytes once again there was 0% packet loss however the average RTT was 138.869 seconds which makes sense because the website is hosted in japan
+    third ping europa.eu with 64 bytes, once again there was 0% packet loss, the average RTT was 162.596 seconds which makes sense because europe is further away from my location than japan is
+
+Step 4: 
+    part a: trying 128.119.245.12...
+        connected to gaia.cs.umass.edu
+        Escape character is '^]'
+        is what happens when connected
+
+    part b: pulls html code from the website given
+
+    part c: name of the file is index.php
+            running html 1.1
+            There is an image on the top of the page and a paragraph with links within it in the center of the page, under the paragraph there are words that are hyper links
+
+
+Step 5:
+    For www.amazon.com I was able to connect to port 80 but unable to connect to any other ports that I tested
+    For yahoo.co.jp it was the same with www.amazon.com I could only connect to port 80, all other ports would not connect
+    europa.eu had the same results has the previous 2, I could only connect to port 80

@@ -1,0 +1,1 @@
+From what I've noticed with running the files using multiple sizes for files and both system calls and file fucntions the file functions are faster.
