@@ -1,0 +1,89 @@
+Concept:
+    Data Structure
+    Code efficiency
+
+Big-O
+
+Mesaure efficiency 
+    Count the number of operations
+
+Big-O Notation
+    classify the cost of an algorithm
+
+    To compute runtime
+        drop all but the fastest-growing term
+        drop any coefficient on that remaining term
+
+        e.g. 3n+2 is O(n)
+
+
+Binary search
+    Begin in middle
+    eliminate 1/2 of remaining possibilites
+    Maximum number of steps required is O(log n) if the original size of the space was n
+    Pre-condition:
+        has to be sorted
+
+Code:
+    bool bsearch(int a[], int n, int x)
+    {
+        int lo, hi, mid;
+        lo = 0;
+        hi = n-1;
+        while(lo =< hi)
+        {
+            mid = (lo+hi)/2;
+            if(x == a[mid])
+                return true
+            if(x > a[mid])
+                lo = mid + 1;
+            else
+                hi = mid - 1;
+            
+        }
+        return false
+    }
+
+Abstract data type
+    Data type whose implementation has been hidden or abstracted in a way
+    Encapsulate the data and the operation on the data, and then hide them from the user
+    Things to care
+        what data
+        what operations can be done on this data
+    Things not to care 
+        how to organize data in memory or disk
+
+Data structure:
+    things to care
+        how to organize data in memory or disk
+    Ex: array; linked list
+
+Hashing
+    key-to-address mapping
+    use a variable as a key to put into a function to get a result that becomes the address
+    h(x) is the address for key x, h(y) is the address for key y
+    to search: a[h(x)] = O(1)
+
+Linear Probing
+    We can think of our hash function as having an extra parameter h(k, i), where i is the probe number that starts at zero for each key (i.e, it's the number of the try)
+    h(k,i) = (h(k) + i) % m
+
+Linear Probing (insertion)
+    m = 9
+    k - 0, 9, 18, 27, 36, 45, 54
+
+General case linear Probing
+    h(k,i) = (h(k)+c*i)%m value of c is a step size
+    E.g. c = 2, m = 7, h(k,i) = (h(k)+2*i)%m, k = 0, 2, 7
+
+Linear Probe search
+    start from home location
+        if not empty compare
+        if empty stop
+    
+Quadratic Probing
+    hash function
+        h(k,i) = (h(k)+i^2)%mapping
+        In General
+            h(k,i) = (h(k) + c1*i + c2*i^2)%m
+        

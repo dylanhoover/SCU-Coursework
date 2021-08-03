@@ -1,0 +1,6 @@
+Hashing
+    key-to-address mapping
+    use a variable as a key to put into a function to get a result that becomes the address
+    h(x) is the address for key x, h(y) is the address for key y
+    to search: a[h(x)] = O(1)
+

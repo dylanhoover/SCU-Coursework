@@ -1,0 +1,18 @@
+Dylan Hoover
+COEN12
+Term Project; Application 3
+
+Functions: 
+    createSet: Runtime is O(1)
+    destroy: Runtime is O(n)
+    searchA: Runtime is O(n)
+    searchB: Runtime is O(n)
+    searchAge: Runtime is O(n)
+    searchID: Runtime is O(n)
+    insertElement: Runtime is O(n^2)
+    deleteElement: Runtime is O(n)
+    maxAgeGap: Runtime is O(1)
+    studentSearch: Runtime is O(n^2)
+
+Justification:
+    The data type I used for application 3 is a sorted doubly linked circular list with a dummy node. The list is sorted by age in accending order. The reasoning for a circular list is so the max age can be calculated in O(1) time because the smallest will always be the first node and the largest will always be the last node. The reason for doubly linked is for ease of insertion and deletion which allows for only using one pointer to traverse the list instead of two. The dummy node is to keep the list circular. A linked list is the only data structure that works quickly because there is no limit on size, the program could be written using an array and then reallocating the size when it gets full, expect that method would take longer to execute. 

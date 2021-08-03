@@ -1,0 +1,26 @@
+Dylan Hoover
+COEN12
+Term Project; Application 1
+
+Functions:
+    In dataSet.c:
+        createDataSet: Runtime is O(n)
+        destorySet: Runtime is O(n)
+        compare: Runtime is O(1)
+        searchAge: Runtime is O(logn)
+        insertElement: Runtime is O(n)
+        deleteElment: Runtime is O(n)
+        maxAgeGap: Runtime is O(1)
+        searchStudent: Runtime is O(logn)
+    In list.c:
+        createList: Runtime is O(1)
+        destroy: Runtime is O(n)
+        addLast: Runtime is O(1)
+        removeItem: Runtime is O(n)
+        numItems: Runtime is O(1)
+        searchID: Runtime is O(n)
+
+Justification:
+    The data structure I chose to use is a sorted array, with chaining using a doubly linked list, with head and tail pointers. The sorted array is used to store the age value of the student in accending order, which makes it much faster to search while also allowing the max age gap to be calculated in O(1) time. Chaining is used for when there are multiple students of the same age a parallel array is used to store the ID values of each student because each are unique. The reasoning for the array being sorted, opposed to unsorted, is to decrease the runtime. There is no other data structure other than a chaining array that can handle multiple elements with one of the pieces of data being the same.
+
+

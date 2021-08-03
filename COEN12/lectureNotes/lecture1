@@ -1,0 +1,18 @@
+Concept:
+    Data Structure
+    Code efficiency
+
+Big-O
+
+Mesaure efficiency 
+    Count the number of operations
+
+Big-O Notation
+    classify the cost of an algorithm
+
+    To compute runtime
+        drop all but the fastest-growing term
+        drop any coefficient on that remaining term
+
+        e.g. 3n+2 is O(n)
+
